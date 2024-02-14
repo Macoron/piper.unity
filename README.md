@@ -6,7 +6,7 @@ Supports only Windows x86-64.
 
 ## Samples
 
-https://github.com/Macoron/piper.unity/assets/6161335/aaa30c52-d921-413f-837f-538471ef6155
+https://github.com/Macoron/piper.unity/assets/6161335/7ab818f0-acd6-46cf-ab5b-09c847aca2dc
 
 *"en_US-lessac-medium" model tested on English text*
 
