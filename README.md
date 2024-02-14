@@ -4,6 +4,16 @@ This is the Unity3d port of [Piper](https://github.com/rhasspy/piper) text-to-sp
 
 Supports only Windows x86-64.
 
+## Samples
+
+https://github.com/Macoron/piper.unity/assets/6161335/aaa30c52-d921-413f-837f-538471ef6155
+
+*"en_US-lessac-medium" model tested on English text*
+
+https://github.com/Macoron/piper.unity/assets/6161335/fd6a5826-23e7-4dca-acdd-00469d71c882
+
+*"ru_RU-ruslan-medium" model tested on Russian text*
+
 ## Getting started
 
 1. Clone this repository and open it as a regular Unity project.
@@ -23,6 +33,6 @@ piper.unity is released under the GPLv3 license.
 
 It uses [eSpeak NG](https://github.com/espeak-ng/espeak-ng) compiled libraries and data which are under GPLv3 license.
 
-It also uses [Piper Phonemization](https://github.com/rhasspy/piper-phonemize) compiled library which is under MIT license.
+It also uses [Piper Phonemization fork](https://github.com/Macoron/piper-phonemize) compiled library which is under MIT license.
 
 Models aren't included in this repository. Please contact the original model's creators to learn more about their licenses.
