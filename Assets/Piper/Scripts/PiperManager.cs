@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Threading.Tasks;
 using Unity.Sentis;
 using UnityEngine;
 
@@ -26,7 +27,7 @@ namespace Piper
             _worker = WorkerFactory.CreateWorker(backend, _runtimeModel);
         }
 
-        public AudioClip TextToSpeech(string text)
+        public async Task<AudioClip> TextToSpeech(string text)
         {
             var sw = new System.Diagnostics.Stopwatch();
             sw.Start();
@@ -60,7 +61,7 @@ namespace Piper
                 _worker.Execute(input);
 
                 using var outputTensor = _worker.PeekOutput() as TensorFloat;
-                outputTensor.MakeReadable();
+                await outputTensor.MakeReadableAsync();
 
                 var output = outputTensor.ToReadOnlyArray();
                 audioBuffer.AddRange(output);
